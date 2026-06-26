@@ -3,14 +3,15 @@
     <data>
         <menuitem
             id="menu_root"
-            name="QLVB"
+            name="QLKH"
             sequence="0"/>
           
-        <menuitem name="Quản lý loại văn bản" 
-            id="menu_loai_van_ban" 
-            parent="menu_root" 
+        <menuitem
+            id="menu_khach_hang"
+            name="Quản lý khách hàng"
+            parent="menu_root"
+            action="action_khach_hang"
             sequence="1"
-            action="action_loai_van_ban"
         />
     </data>
 </odoo>

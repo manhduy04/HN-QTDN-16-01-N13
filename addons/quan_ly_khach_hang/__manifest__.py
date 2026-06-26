@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Quản lý văn bản",
+    'name': "Quản lý khách hàng",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -25,7 +25,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/loai_van_ban.xml',
+        'views/khach_hang.xml',
 
         'views/menu.xml',
     ],

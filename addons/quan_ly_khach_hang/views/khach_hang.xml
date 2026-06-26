@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- TREE -->
+        <record id="view_khach_hang_tree" model="ir.ui.view">
+            <field name="model">khach_hang</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_khach_hang"/>
+                    <field name="ten_khach_hang"/>
+                    <field name="loai_khach_hang"/>
+                    <field name="so_dien_thoai"/>
+                    <field name="email"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM -->
+        <record id="view_khach_hang_form" model="ir.ui.view">
+            <field name="model">khach_hang</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="ma_khach_hang"/>
+                            <field name="ten_khach_hang"/>
+                            <field name="loai_khach_hang"/>
+                            <field name="email"/>
+                            <field name="so_dien_thoai"/>
+                            <field name="dia_chi"/>
+                            <field name="ngay_dang_ky"/>
+                            <field name="ghi_chu"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- ACTION -->
+        <record id="action_khach_hang" model="ir.actions.act_window">
+            <field name="name">Khách hàng</field>
+            <field name="res_model">khach_hang</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
