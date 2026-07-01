@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class KhachHang(models.Model):
     _name = 'khach_hang'
@@ -7,6 +7,12 @@ class KhachHang(models.Model):
 
     ma_khach_hang = fields.Char("Mã khách hàng", required=True)
     ten_khach_hang = fields.Char("Tên khách hàng", required=True)
+
+    nhan_vien_phu_trach_id = fields.Many2one(
+        'nhan_vien',
+        string='Nhân viên phụ trách'
+    )
+    
     loai_khach_hang = fields.Selection(
         [
             ('ca_nhan', 'Cá nhân'),
@@ -20,3 +26,8 @@ class KhachHang(models.Model):
     dia_chi = fields.Char("Địa chỉ")
     ngay_dang_ky = fields.Date("Ngày đăng ký", default=fields.Date.today)
     ghi_chu = fields.Text("Ghi chú")
+
+    @api.onchange('khach_hang_id')
+    def _onchange_khach_hang(self):
+        if self.khach_hang_id:
+            self.nhan_vien_id = self.khach_hang_id.nhan_vien_phu_trach_id

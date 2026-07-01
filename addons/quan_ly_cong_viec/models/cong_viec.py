@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import models, fields, api
 
 class CongViec(models.Model):
     _name = 'cong_viec.cong_viec'
@@ -13,6 +12,11 @@ class CongViec(models.Model):
         string='Nhân viên phụ trách'
     )
 
+    khach_hang_id = fields.Many2one(
+        'khach_hang',
+        string='Khách hàng'
+    )
+
     ngay_bat_dau = fields.Date(string='Ngày bắt đầu')
     ngay_ket_thuc = fields.Date(string='Ngày kết thúc')
 
@@ -21,4 +25,9 @@ class CongViec(models.Model):
         ('dang_lam', 'Đang làm'),
         ('hoan_thanh', 'Hoàn thành'),
         ('huy', 'Hủy'),
-    ], string='Trạng thái', default='moi')
+    ], default='moi')
+
+    @api.onchange('khach_hang_id')
+    def _onchange_khach_hang(self):
+        if self.khach_hang_id:
+            self.nhan_vien_id = self.khach_hang_id.nhan_vien_phu_trach_id

@@ -9,6 +9,7 @@
                 <tree>
                     <field name="ma_khach_hang"/>
                     <field name="ten_khach_hang"/>
+                    
                     <field name="loai_khach_hang"/>
                     <field name="so_dien_thoai"/>
                     <field name="email"/>
@@ -25,6 +26,7 @@
                         <group>
                             <field name="ma_khach_hang"/>
                             <field name="ten_khach_hang"/>
+                            <field name="nhan_vien_phu_trach_id"/>
                             <field name="loai_khach_hang"/>
                             <field name="email"/>
                             <field name="so_dien_thoai"/>

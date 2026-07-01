@@ -21,7 +21,9 @@
 
     # any module necessary for this one to work correctly
     'depends': [
-        'base'
+        'base',
+        'nhan_su',
+        'quan_ly_khach_hang',
         #'nhan_vien'
         ],
 
