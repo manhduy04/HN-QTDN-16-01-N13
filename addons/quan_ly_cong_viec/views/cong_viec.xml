@@ -13,6 +13,7 @@
                     <field name="nhan_vien_id"/>
                     <field name="ngay_bat_dau"/>
                     <field name="ngay_ket_thuc"/>
+                    <field name="tien_do" widget="progressbar"/>
                     <field name="trang_thai"/>
                 </tree>
             </field>
@@ -29,6 +30,7 @@
                             <field name="name"/>
                             <field name="khach_hang_id"/>
                             <field name="nhan_vien_id"/>
+                            <field name="tien_do" widget="progressbar" readonly="1"/>
                             <field name="trang_thai"/>
                         </group>
                         <group>
@@ -40,6 +42,24 @@
                         </group>
                     </sheet>
                 </form>
+                <header>
+
+                    <button name="action_bat_dau"
+                            string="Bắt đầu"
+                            type="object"
+                            class="btn-primary"/>
+
+                    <button name="action_hoan_thanh"
+                            string="Hoàn thành"
+                            type="object"
+                            class="btn-success"/>
+
+                    <button name="action_huy"
+                            string="Hủy"
+                            type="object"
+                            class="btn-danger"/>
+
+                </header>
             </field>
         </record>
 

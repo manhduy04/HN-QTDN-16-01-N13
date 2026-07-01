@@ -4,8 +4,11 @@ class NhanVien(models.Model):
     _name = 'nhan_vien'
     _description = 'Nhân viên'
     _order = 'ngay_sinh asc'
+    _rec_name = 'ten_nhan_vien'
 
     ma_dinh_danh = fields.Char("Mã định danh", required=True)
+    ten_nhan_vien = fields.Char("Tên nhân viên", required=True)
+    
     ngay_sinh = fields.Date("Ngày sinh")
     que_quan = fields.Char("Quê quán")
     dia_chi = fields.Char("Địa chỉ")

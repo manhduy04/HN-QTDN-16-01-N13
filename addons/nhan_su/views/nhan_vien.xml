@@ -24,6 +24,7 @@
                     <sheet>
                         <group>
                             <field name="ma_dinh_danh"/>
+                            <field name="ten_nhan_vien"/>
                             <field name="ngay_sinh"/>
                             <field name="que_quan"/>
                             <field name="email"/>
