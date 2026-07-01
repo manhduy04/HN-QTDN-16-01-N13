@@ -4,6 +4,7 @@ class KhachHang(models.Model):
     _name = 'khach_hang'
     _description = 'Khách hàng'
     _order = 'ten_khach_hang asc'
+    _rec_name = 'ten_khach_hang'
 
     ma_khach_hang = fields.Char("Mã khách hàng", required=True)
     ten_khach_hang = fields.Char("Tên khách hàng", required=True)

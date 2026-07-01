@@ -31,3 +31,14 @@ class CongViec(models.Model):
     def _onchange_khach_hang(self):
         if self.khach_hang_id:
             self.nhan_vien_id = self.khach_hang_id.nhan_vien_phu_trach_id
+
+    @api.onchange('nhan_vien_id')
+    def _onchange_nhan_vien(self):
+        if self.nhan_vien_id:
+            return {
+                'domain': {
+                    'khach_hang_id': [
+                        ('nhan_vien_phu_trach_id', '=', self.nhan_vien_id.id)
+                    ]
+                }
+            }
