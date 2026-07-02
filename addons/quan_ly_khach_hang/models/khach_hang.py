@@ -1,5 +1,9 @@
 from odoo import models, fields, api
 from datetime import timedelta
+import logging
+
+
+_logger = logging.getLogger(__name__)
 
 class KhachHang(models.Model):
     _name = 'khach_hang'
@@ -60,6 +64,32 @@ class KhachHang(models.Model):
             })
 
         return customer
+    
+    def unlink(self):
+        for customer in self:
+
+            _logger.info(
+                "=== TRIGGER === Đang xóa khách hàng: %s",
+                customer.ten_khach_hang
+            )
+
+            jobs = self.env['cong_viec.cong_viec'].search([
+                ('khach_hang_id', '=', customer.id)
+            ])
+
+            _logger.info(
+                "=== TRIGGER === Tìm thấy %s công việc liên quan",
+                len(jobs)
+            )
+
+            jobs.unlink()
+
+            _logger.info(
+                "=== TRIGGER === Đã xóa toàn bộ công việc của khách hàng %s",
+                customer.ten_khach_hang
+            )
+
+        return super().unlink()
 
 #    @api.onchange('khach_hang_id')
 #    def _onchange_khach_hang(self):
