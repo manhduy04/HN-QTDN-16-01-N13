@@ -71,3 +71,16 @@ class CongViec(models.Model):
 
     def action_huy(self):
         self.trang_thai = 'huy'
+
+
+    def write(self, vals):
+        result = super().write(vals)
+
+        if vals.get('trang_thai') == 'hoan_thanh':
+            for job in self:
+                if job.khach_hang_id:
+                    job.khach_hang_id.write({
+                        'trang_thai_cham_soc': 'xong'
+                    })
+
+        return result

@@ -23,7 +23,6 @@
     'depends': [
         'base',
         'nhan_su',
-        'quan_ly_khach_hang',
         ],
 
     # always loaded

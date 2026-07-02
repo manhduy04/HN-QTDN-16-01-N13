@@ -33,6 +33,7 @@
                             <field name="dia_chi"/>
                             <field name="ngay_dang_ky"/>
                             <field name="ghi_chu"/>
+                            <field name="trang_thai_cham_soc"/>
                         </group>
                     </sheet>
                 </form>
