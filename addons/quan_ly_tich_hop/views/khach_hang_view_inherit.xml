@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="view_khach_hang_form_inherit_cong_viec"
-            model="ir.ui.view">
+    <record id="view_khach_hang_form_inherit" model="ir.ui.view">
 
-        <field name="name">
-            khach_hang.form.inherit.cong_viec
-        </field>
+        <field name="name">khach_hang.form.inherit</field>
 
         <field name="model">khach_hang</field>
 
@@ -15,26 +12,19 @@
 
         <field name="arch" type="xml">
 
-            <notebook position="inside">
+            <xpath expr="//sheet" position="inside">
 
-                <page string="Công việc">
+                <notebook>
 
-                    <field name="cong_viec_ids">
+                    <page string="Công việc">
 
-                        <tree editable="bottom">
-                            <field name="name"/>
-                            <field name="nhan_vien_id"/>
-                            <field name="ngay_bat_dau"/>
-                            <field name="ngay_ket_thuc"/>
-                            <field name="trang_thai"/>
-                            <field name="tien_do" widget="progressbar"/>
-                        </tree>
+                        <label string="Đã kết nối thành công."/>
 
-                    </field>
+                    </page>
 
-                </page>
+                </notebook>
 
-            </notebook>
+            </xpath>
 
         </field>
 

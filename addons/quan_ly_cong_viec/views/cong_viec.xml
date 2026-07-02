@@ -46,8 +46,8 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <!-- <field name="khach_hang_id"/>
-                            <field name="nhan_vien_id"/> -->
+                            <field name="khach_hang_id"/>
+                            <field name="nhan_vien_id"/>
                             <field name="tien_do" widget="progressbar" readonly="1"/>
                             <field name="trang_thai"/>
                         </group>
