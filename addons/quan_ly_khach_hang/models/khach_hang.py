@@ -28,7 +28,7 @@ class KhachHang(models.Model):
     ngay_dang_ky = fields.Date("Ngày đăng ký", default=fields.Date.today)
     ghi_chu = fields.Text("Ghi chú")
 
-    @api.onchange('khach_hang_id')
-    def _onchange_khach_hang(self):
-        if self.khach_hang_id:
-            self.nhan_vien_id = self.khach_hang_id.nhan_vien_phu_trach_id
+#    @api.onchange('khach_hang_id')
+#    def _onchange_khach_hang(self):
+#        if self.khach_hang_id:
+#            self.nhan_vien_id = self.khach_hang_id.nhan_vien_phu_trach_id

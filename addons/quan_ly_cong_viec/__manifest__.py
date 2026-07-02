@@ -24,7 +24,6 @@
         'base',
         'nhan_su',
         'quan_ly_khach_hang',
-        #'nhan_vien'
         ],
 
     # always loaded
