@@ -18,7 +18,22 @@
 
                     <page string="Công việc">
 
-                        <label string="Đã kết nối thành công."/>
+                        <field name="cong_viec_ids">
+
+                            <tree>
+
+                                <field name="name"/>
+
+                                <field name="nhan_vien_id"/>
+
+                                <field name="trang_thai"/>
+
+                                <field name="tien_do"
+                                       widget="progressbar"/>
+
+                            </tree>
+
+                        </field>
 
                     </page>
 
