@@ -1,6 +1,7 @@
 from odoo import models, fields, api
 from datetime import timedelta
 import logging
+from ..services import ai_service
 
 
 _logger = logging.getLogger(__name__)
@@ -42,6 +43,20 @@ class KhachHang(models.Model):
     dia_chi = fields.Char("Địa chỉ")
     ngay_dang_ky = fields.Date("Ngày đăng ký", default=fields.Date.today)
     ghi_chu = fields.Text("Ghi chú")
+
+    tom_tat_ai = fields.Text(
+        string="Tóm tắt AI",
+        readonly=True
+    )
+
+    goi_y_cham_soc = fields.Text(
+        string="Gợi ý chăm sóc",
+        readonly=True
+    )
+    email_ai = fields.Text(
+        string="Email chăm sóc",
+        readonly=True
+    )
 
     @api.model
     def create(self, vals):
@@ -90,6 +105,33 @@ class KhachHang(models.Model):
             )
 
         return super().unlink()
+    
+    def action_tom_tat_ai(self):
+        for customer in self:
+
+            tom_tat = ai_service.tom_tat_khach_hang(customer)
+
+            customer.write({
+                'tom_tat_ai': tom_tat
+            })
+
+    def action_goi_y_cham_soc(self):
+        for customer in self:
+
+            goi_y = ai_service.goi_y_cham_soc(customer)
+
+            customer.write({
+                'goi_y_cham_soc': goi_y
+            })
+
+    def action_soan_email(self):
+        for customer in self:
+
+            email = ai_service.soan_email(customer)
+
+            customer.write({
+                'email_ai': email
+            })
 
 #    @api.onchange('khach_hang_id')
 #    def _onchange_khach_hang(self):

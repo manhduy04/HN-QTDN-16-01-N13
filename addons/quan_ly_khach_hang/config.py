@@ -1,0 +1,1 @@
+GEMINI_API_KEY = "gián api ky của bạn vào đây"

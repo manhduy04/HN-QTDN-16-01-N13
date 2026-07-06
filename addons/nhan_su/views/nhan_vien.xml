@@ -8,6 +8,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="ma_dinh_danh"/>
+                    <field name="ten_nhan_vien"/>
                     <field name="email"/>
                     <field name="phong_ban_id"/>
                     <field name="chuc_vu_id"/>

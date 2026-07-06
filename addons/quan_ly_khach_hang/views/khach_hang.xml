@@ -23,6 +23,25 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
+                        <header>
+
+                            <button
+                                name="action_tom_tat_ai"
+                                string="Tóm tắt bằng AI"
+                                type="object"
+                                class="oe_highlight"/>
+
+                            <button
+                                name="action_goi_y_cham_soc"
+                                type="object"
+                                string="Gợi ý chăm sóc"/>
+
+                            <button
+                                name="action_soan_email"
+                                string="Soạn email bằng AI"
+                                type="object"/>
+
+                        </header>
                         <group>
                             <field name="ma_khach_hang"/>
                             <field name="ten_khach_hang"/>
@@ -34,6 +53,20 @@
                             <field name="ngay_dang_ky"/>
                             <field name="ghi_chu"/>
                             <field name="trang_thai_cham_soc"/>
+
+                            <separator string="AI"/>
+
+                            <field
+                                name="tom_tat_ai"
+                                readonly="1"/>
+
+                            <field
+                                name="goi_y_cham_soc"
+                                readonly="1"/>
+
+                            <field
+                                name="email_ai"
+                                readonly="1"/>
                         </group>
                     </sheet>
                 </form>
