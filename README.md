@@ -275,6 +275,10 @@ Kiểm tra:
 # 👥 10. Thành viên nhóm
 
 **Nhóm 13**
+Nguyễn Văn Đạt
+Nguyễn Mạnh Duy
+Phan Việt Hùng
+Đỗ Lê Mạnh Hùng
 
 **Lớp KHMT 16-01**
 
@@ -285,7 +289,7 @@ Kiểm tra:
 Repository:
 
 ```text
-https://github.com/vandat2004/HN-QTDN-16-01-N13
+https://github.com/manhduy04/HN-QTDN-16-01-N13
 ```
 
 ---
