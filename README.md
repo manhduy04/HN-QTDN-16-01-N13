@@ -1,13 +1,13 @@
-<h2 align="left">
-    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
-    🎓 Faculty of Information Technology (DaiNam University)
-    </a>
-</h2>
-<h2 align="left">
-    PLATFORM ERP
-</h2>
-<div align="left">
-    <p align="left">
+<div align="center">
+    <h2>
+        <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
+        🎓 Faculty of Information Technology (DaiNam University)
+        </a>
+    </h2>
+    <h2>
+        PLATFORM ERP
+    </h2>
+    <p>
         <img src="docs/logo/aiotlab_logo.png" alt="AIoTLab Logo" width="170"/>
         <img src="docs/logo/fitdnu_logo.png" alt="AIoTLab Logo" width="180"/>
         <img src="docs/logo/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
@@ -17,6 +17,7 @@
 [![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 </div>
+
 
 # 📖 1. Giới thiệu
 
