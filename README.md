@@ -275,10 +275,10 @@ Kiểm tra:
 # 👥 10. Thành viên nhóm
 
 **Nhóm 13**
-Nguyễn Văn Đạt
-Nguyễn Mạnh Duy
-Phan Việt Hùng
-Đỗ Lê Mạnh Hùng
+**Nguyễn Văn Đạt**
+**Nguyễn Mạnh Duy**
+**Phan Việt Hùng**
+**Đỗ Lê Mạnh Hùng**
 
 **Lớp KHMT 16-01**
 
