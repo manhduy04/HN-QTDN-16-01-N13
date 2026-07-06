@@ -18,7 +18,7 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 
-# 📖 1. Giới thiệu
+## 📖 1. Giới thiệu
 
 Hệ thống ERP Quản lý khách hàng và quản lý công việc được phát triển trên nền tảng Odoo ERP, phục vụ bài tập lớn học phần Hội nhập và Quản trị Doanh nghiệp tại Khoa Công nghệ Thông tin – Đại học Đại Nam.
 
