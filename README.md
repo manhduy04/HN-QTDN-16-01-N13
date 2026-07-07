@@ -53,6 +53,8 @@ Chức năng
 - Quản lý khách hàng tiềm năng
 - Quản lý lịch sử giao dịch
 - Theo dõi trạng thái chăm sóc khách hàng
+<img width="1024" height="574" alt="image" src="https://github.com/user-attachments/assets/d51d69b4-cf5f-4946-9dd5-34a3d4d15ef6" />
+
 
 ---
 
