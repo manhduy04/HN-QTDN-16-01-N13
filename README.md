@@ -153,7 +153,7 @@ addons/
 Clone project
 
 ```bash
-git clone <your_repository>
+git clone https://github.com/manhduy04/HN-QTDN-16-01-N13
 ```
 
 Tạo môi trường
