@@ -1,315 +1,219 @@
-<div align="center">
-    <h2>
-        <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
-        🎓 Faculty of Information Technology (DaiNam University)
-        </a>
-    </h2>
-    <h2>
-        PLATFORM ERP
-    </h2>
-    <p>
-        <img src="docs/logo/aiotlab_logo.png" alt="AIoTLab Logo" width="170"/>
-        <img src="docs/logo/fitdnu_logo.png" alt="AIoTLab Logo" width="180"/>
-        <img src="docs/logo/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
-    </p>
+<h2 align="center">
+    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
+        🎓 Faculty of Information Technology - Dai Nam University
+    </a>
+</h2>
 
-[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
-[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
-[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
+<h2 align="center">
+    ERP - HỆ THỐNG QUẢN LÝ KHÁCH HÀNG, NHÂN SỰ VÀ CÔNG VIỆC
+</h2>
+
+<div align="center">
+
+![Odoo](https://img.shields.io/badge/Odoo-15-purple?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge)
+
 </div>
 
+---
 
-# 📖 1. Giới thiệu
+# 📖 Giới thiệu
 
-Hệ thống ERP Quản lý khách hàng và quản lý công việc được phát triển trên nền tảng Odoo ERP, phục vụ bài tập lớn học phần Hội nhập và Quản trị Doanh nghiệp tại Khoa Công nghệ Thông tin – Đại học Đại Nam.
+Đây là hệ thống ERP được xây dựng trên nền tảng **Odoo 15**, phục vụ việc quản lý khách hàng, quản lý nhân sự và quản lý công việc trong doanh nghiệp.
 
-Hệ thống giúp doanh nghiệp quản lý tập trung các nghiệp vụ quan trọng như:
+Hệ thống hướng tới việc số hóa quy trình làm việc, giúp doanh nghiệp quản lý tập trung trên một nền tảng duy nhất.
 
-- Quản lý nhân sự (HRM)
-- Quản lý khách hàng (CRM)
-- Quản lý công việc (Task Management)
-
-Việc tích hợp các module trên cùng một nền tảng giúp doanh nghiệp tối ưu quy trình làm việc, nâng cao hiệu quả quản lý và giảm thời gian xử lý nghiệp vụ.
+Ngoài các chức năng quản lý, hệ thống còn tích hợp **AI Chatbot** hỗ trợ người dùng tra cứu thông tin và tư vấn tự động.
 
 ---
 
-# 🎯 2. Mục tiêu dự án
+# 🎯 Mục tiêu
 
-- Xây dựng hệ thống ERP trên nền tảng Odoo.
-- Quản lý tập trung thông tin nhân sự, khách hàng và công việc.
-- Tự động hóa quy trình quản lý doanh nghiệp.
-- Theo dõi tiến độ công việc và phân công nhân sự.
-- Hỗ trợ doanh nghiệp quản lý dữ liệu chính xác và hiệu quả.
+- Quản lý khách hàng
+- Quản lý nhân sự
+- Quản lý công việc
+- Tích hợp AI Chatbot
+- Đồng bộ dữ liệu trên một hệ thống ERP
 
 ---
 
-# 🏗️ 3. Kiến trúc hệ thống
+# 🏗️ Kiến trúc hệ thống
 
-## 3.1 HRM (Human Resource Management)
+Hệ thống gồm 4 module chính:
 
-Module quản lý nhân sự giúp lưu trữ và quản lý toàn bộ thông tin nhân viên.
+## 1. Quản lý khách hàng
 
-### Chức năng
+Chức năng
+
+- Quản lý thông tin khách hàng
+- Quản lý khách hàng tiềm năng
+- Quản lý lịch sử giao dịch
+- Theo dõi trạng thái chăm sóc khách hàng
+
+---
+
+## 2. Quản lý nhân sự
+
+Chức năng
 
 - Quản lý hồ sơ nhân viên
 - Quản lý phòng ban
 - Quản lý chức vụ
-- Quản lý hợp đồng lao động
-- Theo dõi thông tin nhân sự
-- Phân quyền người dùng
+- Theo dõi trạng thái làm việc
 
 ---
 
-## 3.2 Customer Management
+## 3. Quản lý công việc
 
-Module quản lý khách hàng hỗ trợ doanh nghiệp theo dõi toàn bộ thông tin khách hàng.
-
-### Chức năng
-
-- Quản lý khách hàng
-- Quản lý khách hàng tiềm năng
-- Quản lý thông tin liên hệ
-- Quản lý lịch sử giao dịch
-- Theo dõi trạng thái khách hàng
-- Hỗ trợ chăm sóc khách hàng
-
----
-
-## 3.3 Task Management
-
-Module quản lý công việc giúp theo dõi tiến độ làm việc của nhân viên.
-
-### Chức năng
+Chức năng
 
 - Tạo công việc
-- Phân công công việc
+- Giao việc
 - Theo dõi tiến độ
-- Quản lý deadline
-- Cập nhật trạng thái công việc
-- Báo cáo tiến độ
+- Theo dõi Deadline
+- Thống kê công việc
 
 ---
 
-# 🔧 4. Công nghệ sử dụng
+## 4. AI Chatbot
 
-<div align="left">
+Chức năng
 
-### Hệ điều hành
-[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
-### Công nghệ chính
-[![Odoo](https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white)](https://www.odoo.com/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![XML](https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=codeforces&logoColor=white)](https://www.w3.org/XML/)
-### Cơ sở dữ liệu
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-</div>
+- Hỗ trợ người dùng
+- Trả lời câu hỏi
+- Tìm kiếm thông tin
+- Hỗ trợ thao tác trên hệ thống
 
 ---
 
-# ⚙️ 5. Cài đặt
+# 🚀 Chức năng nổi bật
 
-## 5.1 Clone project
+- Dashboard thống kê trực quan
+- Quản lý khách hàng
+- Quản lý nhân viên
+- Quản lý công việc
+- Theo dõi tiến độ
+- Phân quyền người dùng
+- AI Chatbot hỗ trợ
 
-```bash
-git clone https://github.com/vandat2004/HN-QTDN-16-01-N13.git
-cd HN-QTDN-16-01-N13
+---
+
+# 💻 Công nghệ sử dụng
+
+## Backend
+
+- Odoo 15
+- Python 3.10
+
+## Frontend
+
+- XML
+- JavaScript
+- CSS
+
+## Database
+
+- PostgreSQL
+
+## AI
+
+- Gemini API
+
+## Hệ điều hành
+
+- Ubuntu
+- Docker
+
+---
+
+# 📂 Cấu trúc dự án
+
+```
+addons/
+│
+├── quan_ly_khach_hang
+│
+├── nhan_su
+│
+├── quan_ly_cong_viec
+│
+├── quan_ly_chatbot
+│
+└── quan_ly_tich_hop
 ```
 
 ---
 
-## 5.2 Tạo Virtual Environment
+# ⚙️ Cài đặt
+
+Clone project
 
 ```bash
-python -m venv venv
+git clone <your_repository>
+```
+
+Tạo môi trường
+
+```bash
+python3.10 -m venv venv
 source venv/bin/activate
 ```
 
----
-
-## 5.3 Cài đặt dependencies
+Cài thư viện
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 5.4 Khởi tạo PostgreSQL
+Khởi động PostgreSQL
 
 ```bash
-sudo docker-compose up -d
+docker compose up -d
 ```
 
-Thông tin Database
-
-| Thuộc tính | Giá trị |
-|---|---|
-| Host | localhost |
-| Port | 5431 |
-| User | odoo |
-| Password | odoo |
-
----
-
-## 5.5 Tạo file cấu hình
-
-```bash
-cp odoo.conf.template odoo.conf
-```
-
-Ví dụ:
-
-```ini
-[options]
-addons_path = addons
-db_host = localhost
-db_port = 5431
-db_user = odoo
-db_password = odoo
-xmlrpc_port = 8069
-```
-
----
-
-## 5.6 Khởi động Odoo
+Chạy Odoo
 
 ```bash
 python3 odoo-bin.py -c odoo.conf
 ```
 
-Truy cập:
+---
 
-```text
-http://localhost:8069
-```
+# 📊 Các module
+
+| Module | Chức năng |
+|---------|-----------|
+| Quản lý khách hàng | CRM |
+| Nhân sự | HRM |
+| Quản lý công việc | Task Management |
+| Chatbot | AI Assistant |
+| Tích hợp | Liên kết dữ liệu |
 
 ---
 
-# 📦 6. Cài đặt Module
+# 🔮 Hướng phát triển
 
-Sau khi khởi động hệ thống:
-
-- Đăng nhập Odoo
-- Vào Apps
-- Chọn Update Apps List
-- Tìm các module của nhóm
-- Cài đặt:
-  - HRM
-  - Customer Management
-  - Task Management
+- Tích hợp Email
+- Tích hợp Telegram
+- AI Chatbot thông minh hơn
+- Đồng bộ Mobile
+- Báo cáo Dashboard nâng cao
+- Phân tích dữ liệu bằng AI
 
 ---
 
-# 📁 7. Cấu trúc thư mục
+# 👨‍💻 Nhóm thực hiện
 
-```text
-HN-QTDN-16-01-N13/
-├── addons/
-│   ├── hrm/
-│   ├── customer_management/
-│   └── task_management/
-├── odoo/
-├── docker-compose.yml
-├── requirements.txt
-├── odoo-bin.py
-├── odoo.conf.template
-└── README.md
-```
+Sinh viên Khoa Công nghệ Thông tin
+
+Đại học Đại Nam
 
 ---
 
-# 🚀 8. Chức năng nổi bật
+<div align="center">
 
-## 👨‍💼 Quản lý nhân sự
+Made with ❤️ using Odoo 15
 
-- Quản lý nhân viên
-- Quản lý phòng ban
-- Quản lý chức vụ
-- Theo dõi hồ sơ
-
----
-
-## 👥 Quản lý khách hàng
-
-- Quản lý thông tin khách hàng
-- Theo dõi lịch sử giao dịch
-- Quản lý khách hàng tiềm năng
-- Chăm sóc khách hàng
-
----
-
-## 📋 Quản lý công việc
-
-- Phân công công việc
-- Theo dõi tiến độ
-- Quản lý deadline
-- Báo cáo công việc
-
----
-
-# 🧪 9. Kiểm thử
-
-Khởi động hệ thống:
-
-```bash
-python3 odoo-bin.py -c odoo.conf
-```
-
-Sau đó truy cập:
-
-```text
-http://localhost:8069
-```
-
-Kiểm tra:
-
-- Đăng nhập hệ thống
-- Cài đặt module
-- Thêm dữ liệu
-- Chỉnh sửa dữ liệu
-- Xóa dữ liệu
-- Kiểm tra phân quyền
-
----
-
-# 👥 10. Thành viên nhóm
-
-**Nhóm 13**
-
-**Nguyễn Văn Đạt**
-
-**Nguyễn Mạnh Duy**
-
-**Phan Việt Hùng**
-
-**Đỗ Lê Mạnh Hùng**
-
-**Lớp KHMT 16-01**
-
-**Khoa Công nghệ Thông tin**
-
-**Đại học Đại Nam**
-
-Repository:
-
-```text
-https://github.com/manhduy04/HN-QTDN-16-01-N13
-```
-
----
-
-# 📚 11. Tài liệu tham khảo
-
-- Odoo Documentation
-- PostgreSQL Documentation
-- Docker Documentation
-- Python Documentation
-
----
-
-# 📝 12. License
-
-Dự án được phát triển phục vụ mục đích học tập tại Đại học Đại Nam.
-
-© 2026 - KHMT16-01 - Nhóm 13
+</div>
