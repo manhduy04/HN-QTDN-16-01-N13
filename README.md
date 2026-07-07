@@ -223,12 +223,23 @@ python3 odoo-bin.py -c odoo.conf
 
 # 🔮 Hướng phát triển
 
-- Tích hợp Email
-- Tích hợp Telegram
-- AI Chatbot thông minh hơn
-- Đồng bộ Mobile
-- Báo cáo Dashboard nâng cao
-- Phân tích dữ liệu bằng AI
+- 📧 **Tích hợp Email**
+  - Tự động gửi thông báo, nhắc việc và xác nhận thông tin đến khách hàng, nhân viên.
+
+- 📱 **Tích hợp Telegram**
+  - Gửi thông báo công việc, trạng thái dự án và nhắc deadline theo thời gian thực.
+
+- 🤖 **AI Chatbot thông minh hơn**
+  - Nâng cao khả năng tư vấn, hỗ trợ khách hàng và trả lời theo dữ liệu doanh nghiệp.
+
+- 📲 **Đồng bộ Mobile**
+  - Phát triển ứng dụng hoặc PWA để quản lý công việc mọi lúc, mọi nơi.
+
+- 📊 **Báo cáo Dashboard nâng cao**
+  - Bổ sung biểu đồ, KPI và thống kê trực quan hỗ trợ nhà quản lý ra quyết định.
+
+- 🧠 **Phân tích dữ liệu bằng AI**
+  - Phân tích hành vi khách hàng, dự đoán xu hướng và đề xuất giải pháp kinh doanh.
 
 ---
 
