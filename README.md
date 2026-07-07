@@ -42,7 +42,7 @@ Bên cạnh các chức năng quản lý, hệ thống còn cung cấp các côn
 
 # 🏗️ Kiến trúc hệ thống
 
-Hệ thống gồm 3 module chính:
+Hệ thống gồm 4 module chính:
 
 <img width="1024" height="574" alt="image" src="https://github.com/user-attachments/assets/c88ab1b6-0f24-4a58-ac39-bd54d243de89" />
 
@@ -83,13 +83,11 @@ Chức năng
 
 # 🚀 Chức năng nổi bật
 
-- Dashboard thống kê trực quan
 - Quản lý khách hàng
 - Quản lý nhân viên
 - Quản lý công việc
 - Theo dõi tiến độ
 - Phân quyền người dùng
-- AI Chatbot hỗ trợ
 
 ---
 
@@ -232,8 +230,13 @@ Giao diện Hồ sơ chi tiết Khách hàng đã gán Dữ liệu gốc chức 
 
 <img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/efb6deab-d5f9-4d1c-9787-3d2407edee81" />
 
+Giao diện Danh sách Công việc (List View): Giao diện cung cấp cái nhìn tổng quan về toàn bộ các đầu việc trong hệ thống.
 
+<img width="1915" height="943" alt="image" src="https://github.com/user-attachments/assets/3badcad3-ab46-498c-81d3-f9eea467d4ea" />
 
+Giao diện Khởi tạo Công việc thủ công (Form View): Bên cạnh luồng tạo tự động, hệ thống cho phép người quản lý chủ động tạo việc mới bằng biểu mẫu chuẩn hóa. Form tích hợp các nút chuyển trạng thái nhanh (Bắt đầu, Hoàn thành, Hủy) ở góc trên và các trường chọn dữ liệu liên kết đối tác, nhân sự cùng thanh đo tiến độ khởi tạo mặc định là 0%.
+
+<img width="1918" height="943" alt="image" src="https://github.com/user-attachments/assets/f188b6f7-3a46-4d50-ade1-21c29321690b" />
 
 
 # 🔮 Hướng phát triển
