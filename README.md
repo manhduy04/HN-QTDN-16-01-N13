@@ -23,11 +23,11 @@
 
 # 📖 Giới thiệu
 
-Đây là hệ thống ERP được xây dựng trên nền tảng **Odoo 15**, phục vụ việc quản lý khách hàng, quản lý nhân sự và quản lý công việc trong doanh nghiệp.
+Đây là hệ thống ERP được xây dựng trên nền tảng Odoo 15, phục vụ việc quản lý khách hàng, quản lý nhân sự và quản lý công việc trong doanh nghiệp.
 
-Hệ thống hướng tới việc số hóa quy trình làm việc, giúp doanh nghiệp quản lý tập trung trên một nền tảng duy nhất.
+Hệ thống hướng tới việc số hóa quy trình làm việc, giúp doanh nghiệp quản lý tập trung trên một nền tảng duy nhất, giảm thời gian xử lý thủ công và nâng cao hiệu quả quản lý.
 
-Ngoài các chức năng quản lý, hệ thống còn tích hợp **AI Chatbot** hỗ trợ người dùng tra cứu thông tin và tư vấn tự động.
+Bên cạnh các chức năng quản lý, hệ thống còn cung cấp các công cụ hỗ trợ như theo dõi tiến độ công việc, thống kê dữ liệu, báo cáo trực quan và phân quyền người dùng, giúp nhà quản lý dễ dàng giám sát hoạt động của doanh nghiệp và đưa ra quyết định nhanh chóng, chính xác.
 
 ---
 
@@ -36,16 +36,16 @@ Ngoài các chức năng quản lý, hệ thống còn tích hợp **AI Chatbot*
 - Quản lý khách hàng
 - Quản lý nhân sự
 - Quản lý công việc
-- Tích hợp AI Chatbot
 - Đồng bộ dữ liệu trên một hệ thống ERP
 
 ---
 
 # 🏗️ Kiến trúc hệ thống
 
-<img width="1024" height="574" alt="image" src="https://github.com/user-attachments/assets/d51d69b4-cf5f-4946-9dd5-34a3d4d15ef6" />
+Hệ thống gồm 3 module chính:
 
-Hệ thống gồm 4 module chính:
+<img width="1024" height="574" alt="image" src="https://github.com/user-attachments/assets/c88ab1b6-0f24-4a58-ac39-bd54d243de89" />
+
 
 ## 1. Quản lý khách hàng
 
@@ -78,17 +78,6 @@ Chức năng
 - Theo dõi tiến độ
 - Theo dõi Deadline
 - Thống kê công việc
-
----
-
-## 4. AI Chatbot
-
-Chức năng
-
-- Hỗ trợ người dùng
-- Trả lời câu hỏi
-- Tìm kiếm thông tin
-- Hỗ trợ thao tác trên hệ thống
 
 ---
 
@@ -220,6 +209,32 @@ python3 odoo-bin.py -c odoo.conf
 | Tích hợp | Liên kết dữ liệu |
 
 ---
+
+# Giao diện ứng dụng.
+
+Giao diện Danh sách Nhân viên (List View): Hệ thống hiển thị trực quan toàn bộ danh sách nhân sự chính thức của công ty.  
+
+<img width="1909" height="940" alt="image" src="https://github.com/user-attachments/assets/6ddb7d4c-5164-4193-96c4-567ca7cd4e23" />
+
+Giao diện Khởi tạo Nhân viên mới (Form View): Khi phát sinh nhân sự mới, bộ phận HR sử dụng cấu trúc biểu mẫu chuẩn hóa để nhập hồ sơ.
+
+<img width="1909" height="948" alt="image" src="https://github.com/user-attachments/assets/350d4eeb-82ee-48bb-b0eb-3d85b4cccb84" />
+
+Giao diện Danh sách Khách hàng (List View): Giao diện hiển thị danh mục toàn bộ các khách hàng/đối tác hiện có trong cơ sở dữ liệu. 
+
+<img width="1915" height="943" alt="image" src="https://github.com/user-attachments/assets/e5c34280-e8cf-469f-a641-35e6f8b12ba0" />
+
+Giao diện Biểu mẫu khởi tạo Khách hàng (Form View): Khi tiếp nhận thông tin từ các kênh thô, nhân viên click nút "Tạo" để mở biểu mẫu nhập liệu.
+
+<img width="1918" height="943" alt="image" src="https://github.com/user-attachments/assets/14c5d47e-429d-4f49-b688-a36b666cd543" />
+
+Giao diện Hồ sơ chi tiết Khách hàng đã gán Dữ liệu gốc chức năng sửa [Mức 1]: Hệ thống chứng minh tính toàn vẹn dữ liệu gốc khi hiển thị thông tin chi tiết của đối tác Nguyễn Minh Tuấn.
+
+<img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/efb6deab-d5f9-4d1c-9787-3d2407edee81" />
+
+
+
+
 
 # 🔮 Hướng phát triển
 
