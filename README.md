@@ -269,7 +269,7 @@ Sinh viên Khoa Công nghệ Thông tin
 
 ---
 
-[images.pdf](https://github.com/user-attachments/files/29777254/images.pdf)
+<img width="1125" height="1625" alt="images_page-0001" src="https://github.com/user-attachments/assets/5ef762c3-8e5a-422c-8d1e-7e7a56f6d897" />
 
 
 <div align="center">
