@@ -269,6 +269,9 @@ Sinh viên Khoa Công nghệ Thông tin
 
 ---
 
+[images.pdf](https://github.com/user-attachments/files/29777254/images.pdf)
+
+
 <div align="center">
 
 Made with ❤️ using Odoo 15
