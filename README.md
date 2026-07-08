@@ -269,8 +269,6 @@ Sinh viên Khoa Công nghệ Thông tin
 
 ---
 
-<img width="540" height="780" alt="nhom_13" src="https://github.com/user-attachments/assets/87d54dda-3e44-49cb-9a85-9cc17092df3b" />
-
 
 <div align="center">
 
